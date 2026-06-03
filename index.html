@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pribadi | Rakka Sheva Fabian</title>
+    <!-- Tailwind CSS untuk Desain Modern & Responsif -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons untuk Ikon yang Estetik -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .glassmorphism {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="fixed top-0 left-0 right-0 z-40 glassmorphism border-b border-slate-200/50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold bg-gradient-to-r bg-clip-text text-transparent from-indigo-600 to-purple-600">RSF.</span>
+            <div class="flex gap-6 text-sm font-medium text-slate-600">
+                <a href="#profil" class="hover:text-indigo-600 transition">Profil</a>
+                <a href="#pendidikan" class="hover:text-indigo-600 transition">Pendidikan</a>
+                <a href="#prestasi" class="hover:text-indigo-600 transition">Prestasi & Organisasi</a>
+                <a href="#proyek" class="hover:text-indigo-600 transition">Proyek</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-b from-indigo-50 via-white to-slate-50">
+        <div class="absolute inset-0 z-0 opacity-30">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-purple-300 rounded-full filter blur-3xl animate-pulse"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-indigo-300 rounded-full filter blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-4 rounded-full text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200 mb-6">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> Selamat Datang di Portofolio Saya
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-4">
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">
+                    Rakka Sheva Fabian
+                </span>
+            </h1>
+            <p class="text-2xl md:text-3xl font-bold text-slate-700 mb-8 tracking-wide">
+                Kelas: <span class="text-indigo-600 font-mono">XI 1 - Soshum - SMA Al Falah Darmo</span>
+            </p>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Dibuat menggunakan platform <strong class="text-slate-900 font-semibold">n8n</strong> untuk integrasi cerdas, menampilkan perjalanan akademis, karya inovatif, dan visi masa depan.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#profil" class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-xl shadow-lg shadow-indigo-600/20 hover:bg-indigo-700 transition flex items-center gap-2">
+                    Jelajahi Profil <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+                <button onclick="toggleChatbot()" class="px-6 py-3 bg-white text-slate-700 font-medium rounded-xl border border-slate-200 shadow-sm hover:bg-slate-50 transition flex items-center gap-2">
+                    Tanya AI Chatbot <i data-lucide="message-square" class="w-4 h-4 text-indigo-600"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFIL & MASA DEPAN -->
+    <section id="profil" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="p-2 bg-indigo-100 text-indigo-600 rounded-lg"><i data-lucide="user" class="w-5 h-5"></i></div>
+                    <h2 class="text-3xl font-bold text-slate-900">Profil Singkat</h2>
+                </div>
+                <p class="text-slate-600 leading-relaxed text-lg">
+                    Halo! Saya lahir di Surabaya dan biasa dipanggil <strong>Rakka</strong>. Saat ini saya menempuh pendidikan di SMA Al Falah Darmo Surabaya. Saya memiliki ketertarikan kuat di bidang teknologi, organisasi, dan dunia bisnis.
+                </p>
+            </div>
+            <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-white"><i data-lucide="trending-up" class="w-40 h-40"></i></div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-white/10 text-indigo-300 rounded-lg"><i data-lucide="target" class="w-5 h-5"></i></div>
+                    <h3 class="text-xl font-semibold">Cita-cita & Rencana Masa Depan</h3>
+                </div>
+                <p class="text-indigo-100/90 leading-relaxed">
+                    "Cita-cita saya adalah menjadi seorang <strong class="text-white underline decoration-wavy decoration-indigo-400">Pebisnis</strong>. Rencana masa depan saya fokus untuk belajar keras, membangun jaringan, dan bertransformasi menjadi pebisnis sukses yang mampu menghadirkan solusi bermanfaat bagi masyarakat."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="max-w-5xl mx-auto border-slate-200">
+
+    <!-- RIWAYAT PENDIDIKAN -->
+    <section id="pendidikan" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold text-slate-900 flex items-center justify-center gap-3">
+                <i data-lucide="graduation-cap" class="text-indigo-600"></i> Riwayat Pendidikan
+            </h2>
+        </div>
+        <div class="relative border-l-2 border-slate-200 max-w-3xl mx-auto pl-6 space-y-12">
+            <div class="relative">
+                <div class="absolute -left-[31px] top-0 bg-indigo-600 text-white p-1 rounded-full"><i data-lucide="check" class="w-3 h-3"></i></div>
+                <span class="text-sm font-semibold text-indigo-600 font-mono">2021 - 2022</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-1">SD Islam Bahrul Ulum</h4>
+                <p class="text-slate-500 text-sm">Pendidikan Dasar</p>
+            </div>
+            <div class="relative">
+                <div class="absolute -left-[31px] top-0 bg-indigo-600 text-white p-1 rounded-full"><i data-lucide="check" class="w-3 h-3"></i></div>
+                <span class="text-sm font-semibold text-indigo-600 font-mono">2024 - 2025</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-1">SMP Khadijah 2</h4>
+                <p class="text-slate-500 text-sm">Pendidikan Menengah Pertama</p>
+            </div>
+            <div class="relative">
+                <div class="absolute -left-[31px] top-0 bg-emerald-500 text-white p-1 rounded-full"><i data-lucide="clock" class="w-3 h-3"></i></div>
+                <span class="text-sm font-semibold text-emerald-600 font-mono">2026 - Sekarang</span>
+                <h4 class="text-xl font-bold text-slate-900 mt-1">SMA Al Falah Darmo</h4>
+                <p class="text-slate-500 text-sm">Pendidikan Menengah Atas (Kelas XI 1 - Soshum)</p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="max-w-5xl mx-auto border-slate-200">
+
+    <!-- PRESTASI & ORGANISASI -->
+    <section id="prestasi" class="py-24 max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+            <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                <i data-lucide="trophy" class="text-amber-500"></i> Prestasi Gemilang
+            </h3>
+            <ul class="space-y-4">
+                <li class="flex gap-4 items-start">
+                    <span class="p-2 bg-amber-50 text-amber-600 rounded-lg font-bold text-sm shrink-0">#1</span>
+                    <div>
+                        <h4 class="font-semibold text-slate-900">Juara 2 Futsal Tingkat SMP</h4>
+                        <p class="text-sm text-slate-500">Diraih pada Tahun 2024</p>
+                    </div>
+                </li>
+                <li class="flex gap-4 items-start">
+                    <span class="p-2 bg-amber-50 text-amber-600 rounded-lg font-bold text-sm shrink-0">#2</span>
+                    <div>
+                        <h4 class="font-semibold text-slate-900">Babak 8 Besar OSN Kimia</h4>
+                        <p class="text-sm text-slate-500">Tingkat SMP Tahun 2024</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+            <h3 class="text-2xl font-bold text-slate-900 flex items-center gap-2">
+                <i data-lucide="users" class="text-indigo-600"></i> Pengalaman Organisasi
+            </h3>
+            <ul class="space-y-4">
+                <li class="flex gap-3 items-center">
+                    <div class="p-1.5 bg-slate-100 rounded text-slate-700"><i data-lucide="camera" class="w-4 h-4"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-slate-900">OSIS Bidang Dokumentasi (Dokum)</h4>
+                        <p class="text-xs text-slate-500">Masa Bakti SMP</p>
+                    </div>
+                </li>
+                <li class="flex gap-3 items-center">
+                    <div class="p-1.5 bg-slate-100 rounded text-slate-700"><i data-lucide="globe" class="w-4 h-4"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-slate-900">OSIS Bidang Social Network (SocNet)</h4>
+                        <p class="text-xs text-slate-500">Masa Bakti SMA</p>
+                    </div>
+                </li>
+                <li class="flex gap-3 items-center">
+                    <div class="p-1.5 bg-slate-100 rounded text-slate-700"><i data-lucide="home" class="w-4 h-4"></i></div>
+                    <div>
+                        <h4 class="font-semibold text-slate-900">Pengurus Karang Taruna</h4>
+                        <p class="text-xs text-slate-500">Masjid Lingkungan Rumah</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="proyek" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold flex items-center justify-center gap-3">
+                    <i data-lucide="cpu" class="text-purple-400"></i> Proyek & Keterampilan (Skills)
+                </h2>
+                <p class="text-slate-400 mt-2">Karya inovasi teknologi otomatisasi yang telah dikembangkan</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700/50 hover:border-purple-500/50 transition">
+                    <div class="w-12 h-12 bg-purple-500/10 text-purple-400 rounded-lg flex items-center justify-center mb-4"><i data-lucide="droplet"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Projek Penyiram Tanaman Otomatis</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Sistem berbasis sensor kelembaban tanah untuk menyiram tanaman secara mandiri dan otonom guna menghemat air dan efisiensi waktu.
+                    </p>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700/50 hover:border-indigo-500/50 transition">
+                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-400 rounded-lg flex items-center justify-center mb-4"><i data-lucide="flame"></i></div>
+                    <h3 class="text-xl font-bold mb-2">Projek Alat Pemadam Kebakaran Otomatis</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Alat otomatisasi cerdas yang mendeteksi titik api atau suhu ekstrem secara real-time dan langsung melakukan pemadaman instan.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-500 text-center py-8 text-sm border-t border-slate-900">
+        <p>&copy; 2026 Rakka Sheva Fabian. All Rights Reserved. Built using n8n framework components.</p>
+    </footer>
+
+    <!-- INTERACTIVE FLOATING CHATBOT WIDGET -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        
+        <!-- Sapaan Otomatis -->
+        <div id="chat-bubble-hint" class="bg-white text-slate-800 shadow-xl border border-slate-200 px-4 py-2 rounded-xl mb-3 text-sm font-medium animate-bounce flex items-center gap-2 cursor-pointer transition hover:scale-105" onclick="toggleChatbot()">
+            <span class="w-2 h-2 bg-indigo-600 rounded-full animate-ping"></span>
+            Halo! Tanyakan tentang Rakka di sini
+        </div>
+
+        <!-- Tombol Utama Pemicu Chatbot -->
+        <button onclick="toggleChatbot()" class="w-14 h-14 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full flex items-center justify-center shadow-xl hover:scale-105 active:scale-95 transition-all">
+            <i id="chat-icon" data-lucide="message-circle" class="w-6 h-6"></i>
+        </button>
+
+        <!-- Kotak Chatbot Interaktif -->
+        <div id="chatbot-box" class="hidden fixed bottom-24 right-6 w-[360px] max-w-[calc(100vw-2rem)] h-[480px] bg-white rounded-2xl shadow-2xl border border-slate-200 flex flex-col overflow-hidden transition-all duration-300">
+            <!-- Header Chatbot -->
+            <div class="bg-indigo-600 p-4 text-white flex items-center justify-between shadow-md">
+                <div class="flex items-center gap-2.5">
+                    <div class="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center"><i data-lucide="bot" class="w-5 h-5"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm">n8n Knowledge AI</h4>
+                        <span class="text-xs text-indigo-200 flex items-center gap-1"><span class="w-1.5 h-1.5 bg-emerald-400 rounded-full"></span> Online & Terintegrasi</span>
+                    </div>
+                </div>
+                <button onclick="toggleChatbot()" class="text-white/80 hover:text-white"><i data-lucide="x" class="w-5 h-5"></i></button>
+            </div>
+
+            <!-- Konten Pesan Chat -->
+            <div id="chat-contents" class="flex-1 p-4 overflow-y-auto space-y-3 bg-slate-50 text-sm">
+                <!-- Pesan Sambutan Sistem n8n -->
+                <div class="flex gap-2 items-start max-w-[85%]">
+                    <div class="w-7 h-7 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xs shrink-0 font-bold">AI</div>
+                    <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-slate-100 text-slate-700">
+                        Halo! Saya adalah AI Asisten Portofolio <strong>Rakka Sheva Fabian</strong> yang ditenagai oleh platform <strong>n8n</strong>. Ada yang ingin kamu ketahui tentang profil, pendidikan, prestasi, organisasi, proyek, atau cita-cita Rakka?
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-3 bg-white border-t border-slate-200 flex gap-2">
+                <input id="chat-input" type="text" placeholder="Ketik pertanyaan di sini..." class="flex-1 bg-slate-100 border-none rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 text-slate-800" onkeydown="if(event.key === 'Enter') handleUserSendMessage()">
+                <button onclick="handleUserSendMessage()" class="p-2.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-xl transition"><i data-lucide="send" class="w-4 h-4"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOGIKA JAVASCRIPT KNOWLEDGE BASE CHATBOT -->
+    <script>
+        // Inisialisasi Ikon Lucide di Awal
+        lucide.createIcons();
+
+        // Data Inti Informasi Rakka
+        const KNOWLEDGE_BASE = {
+            nama: "Nama lengkap saya adalah Rakka Sheva Fabian, biasa dipanggil Rakka.",
+            profil: "Saya lahir di kota Surabaya, akrab dipanggil Rakka, dan saat ini saya bersekolah di SMA Al Falah Darmo Surabaya.",
+            pendidikan: "Riwayat pendidikan saya: SD Islam Bahrul Ulum (2021-2022), dilanjutkan ke SMP Khadijah 2 (2024-2025), dan sekarang bersekolah di SMA Al Falah Darmo kelas XI 1 - Soshum (mulai tahun 2026).",
+            prestasi: "Prestasi yang pernah saya raih adalah Juara 2 Futsal Tingkat SMP pada tahun 2024, serta berhasil menembus Babak 8 Besar OSN Kimia Tingkat SMP di tahun 2024.",
+            organisasi: "Saya aktif berorganisasi, di antaranya pernah menjabat di OSIS bidang Dokumentasi (Dokum) saat SMP, OSIS bidang Social Network (SocNet) saat SMA, serta aktif sebagai pengurus Karang Taruna di Masjid dekat Rumah.",
+            keterampilan: "Keterampilan saya diwujudkan dalam beberapa karya teknologi, seperti Projek Penyiram Tanaman Otomatis dan Projek Alat Pemadam Kebakaran Otomatis.",
+            proyek: "Saya telah menyelesaikan dua proyek teknologi otomatisasi: 1. Projek Penyiram Tanaman Otomatis, dan 2. Projek Alat Pemadam Kebakaran Otomatis.",
+            citacita: "Cita-cita utama saya adalah menjadi seorang Pebisnis. Rencana masa depan saya adalah menjadi seorang Pebisnis Sukses.",
+            n8n: "Platform n8n digunakan sebagai fondasi pengolah alur kerja otomatisasi pintar dan integrasi data AI (Knowledge Base) pada pembuatan Website Portfolio Pribadi ini."
+        };
+
+        // Fungsi Buka Tutup Jendela Chatbot
+        function toggleChatbot() {
+            const chatBox = document.getElementById('chatbot-box');
+            const chatHint = document.getElementById('chat-bubble-hint');
+            const chatIcon = document.getElementById('chat-icon');
+            
+            chatBox.classList.toggle('hidden');
+            if(chatHint) chatHint.remove(); // Hapus sapaan gelembung otomatis jika tombol diklik
+
+            if (chatBox.classList.contains('hidden')) {
+                chatIcon.setAttribute('data-lucide', 'message-circle');
+            } else {
+                chatIcon.setAttribute('data-lucide', 'x');
+                setTimeout(() => document.getElementById('chat-input').focus(), 50);
+            }
+            lucide.createIcons();
+        }
+
+        // Fungsi Mengirim Pesan
+        function handleUserSendMessage() {
+            const inputField = document.getElementById('chat-input');
+            const chatContents = document.getElementById('chat-contents');
+            const queryText = inputField.value.trim();
+            if(!queryText) return;
+
+            // 1. Tampilkan Pesan User ke Box Chat
+            chatContents.innerHTML += `
+                <div class="flex justify-end w-full">
+                    <div class="bg-indigo-600 text-white p-3 rounded-2xl rounded-tr-none max-w-[85%] shadow-sm">
+                        ${queryText}
+                    </div>
+                </div>
+            `;
+            
+            inputField.value = '';
+            chatContents.scrollTop = chatContents.scrollHeight;
+
+            // 2. Cari Jawaban Berdasarkan Input Kata Kunci
+            const msg = queryText.toLowerCase();
+            let reply = "Maaf, data tidak ditemukan di database n8n. Coba tanyakan tentang 'Nama', 'Pendidikan', 'Prestasi', 'Proyek', 'Organisasi' atau 'Cita-cita'.";
+            
+            if(msg.includes('nama')) reply = KNOWLEDGE_BASE.nama;
+            else if(msg.includes('profil') || msg.includes('biodata') || msg.includes('tentang')) reply = KNOWLEDGE_BASE.profil;
+            else if(msg.includes('sekolah') || msg.includes('pendidikan') || msg.includes('kelas') || msg.includes('smp') || msg.includes('sma')) reply = KNOWLEDGE_BASE.pendidikan;
+            else if(msg.includes('prestasi') || msg.includes('futsal') || msg.includes('osn') || msg.includes('kimia')) reply = KNOWLEDGE_BASE.prestasi;
+            else if(msg.includes('organisasi') || msg.includes('osis') || msg.includes('karang taruna')) reply = KNOWLEDGE_BASE.organisasi;
+            else if(msg.includes('proyek') || msg.includes('karya') || msg.includes('tanaman') || msg.includes('kebakaran')) reply = KNOWLEDGE_BASE.proyek;
+            else if(msg.includes('keterampilan') || msg.includes('skill')) reply = KNOWLEDGE_BASE.keterampilan;
+            else if(msg.includes('cita') || msg.includes('bisnis') || msg.includes('pebisnis') || msg.includes('masa depan')) reply = KNOWLEDGE_BASE.citacita;
+            else if(msg.includes('n8n')) reply = KNOWLEDGE_BASE.n8n;
+
+            // 3. Tampilkan Balasan Bot dengan Sedikit Delay Efek Membaca
+            setTimeout(() => {
+                chatContents.innerHTML += `
+                    <div class="flex gap-2 items-start max-w-[85%]">
+                        <div class="w-7 h-7 bg-indigo-100 text-indigo-600 rounded-full flex items-center justify-center text-xs shrink-0 font-bold">AI</div>
+                        <div class="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm border border-slate-100 text-slate-700">
+                            ${reply}
+                        </div>
+                    </div>
+                `;
+                chatContents.scrollTop = chatContents.scrollHeight;
+            }, 400);
+        }
+    </script>
+</body>
+</html>
